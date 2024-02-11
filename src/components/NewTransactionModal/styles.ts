@@ -76,7 +76,11 @@ export const TransactionType = styled.div`
   margin-top: 0.5rem;
 `;
 
-export const TransactionTypeButton = styled.button`
+interface TransactionTypeButtonProps {
+  variant: "income" | "outcome";
+}
+
+export const TransactionTypeButton = styled.button<TransactionTypeButtonProps>`
   background: ${(props) => props.theme["gray-700"]};
   padding: 1rem;
   display: flex;
@@ -86,5 +90,12 @@ export const TransactionTypeButton = styled.button`
   border-radius: 6px;
   cursor: pointer;
   border: 0;
-  color: ${(props) => props.theme["gray-100"]};
+  color: ${(props) => props.theme["gray-300"]};
+
+  svg {
+    color: ${(props) =>
+      props.variant === "income"
+        ? props.theme["green-300"]
+        : props.theme["red-300"]};
+  }
 `;
