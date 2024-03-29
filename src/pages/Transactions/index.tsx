@@ -3,15 +3,18 @@ import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import {
+  ButtonDelete,
+  ButtonEdit,
   PriceHighLight,
   TransactionsContainer,
   TransactionsTable,
 } from "./styles";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { dateFormatter, priceFormatter } from "../../utils/formatter";
+import { Pencil, Trash } from "phosphor-react";
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions, deleteTransactions } = useContext(TransactionsContext);
 
   return (
     <div>
@@ -35,6 +38,18 @@ export function Transactions() {
                   <td>{transaction.category}</td>
                   <td>
                     {dateFormatter.format(new Date(transaction.createdAt))}
+                  </td>
+                  <td>
+                    <ButtonDelete
+                      onClick={() => deleteTransactions(transaction.id)}
+                    >
+                      <Trash size={20} />
+                    </ButtonDelete>
+                  </td>
+                  <td>
+                    <ButtonEdit>
+                      <Pencil size={20} />
+                    </ButtonEdit>
                   </td>
                 </tr>
               );

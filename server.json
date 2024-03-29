@@ -1,51 +1,12 @@
 {
   "transactions": [
     {
-      "id": "1",
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Venda",
-      "price": 14000,
-      "createdAt": "2024-03-27T13:44:03.729Z"
-    },
-    {
-      "id": "2",
-      "description": "Hamburguer",
-      "type": "outcome",
-      "category": "Alimentação",
-      "price": 60,
-      "createdAt": "2024-03-27T13:40:03.729Z"
-    },
-    {
-      "id": "3",
-      "description": "Ignite Rocketseat",
-      "type": "outcome",
-      "category": "Educação",
-      "price": 1980,
-      "createdAt": "2024-03-27T13:40:03.729Z"
-    },
-    {
-      "id": "eb2e",
+      "id": "0966",
       "description": "Desenvolvimento de app",
-      "category": "Trabalho",
-      "price": 12005,
+      "price": 15000,
       "type": "income",
-      "createdAt": "2024-03-29T14:10:09.059Z"
-    },
-    {
-      "id": "995d",
-      "description": "Iorgute de Banana",
-      "price": 4000,
-      "type": "income",
-      "createdAt": "2024-03-29T19:47:31.207Z"
-    },
-    {
-      "id": "ef8a",
-      "description": "Leite em po",
-      "price": 8,
-      "type": "income",
-      "category": "Alimentação",
-      "createdAt": "2024-03-29T20:00:48.594Z"
+      "category": "Desenvolvimento",
+      "createdAt": "2024-03-29T21:13:41.317Z"
     }
   ]
 }
