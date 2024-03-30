@@ -46,11 +46,6 @@ export function Transactions() {
                       <Trash size={20} />
                     </ButtonDelete>
                   </td>
-                  <td>
-                    <ButtonEdit>
-                      <Pencil size={20} />
-                    </ButtonEdit>
-                  </td>
                 </tr>
               );
             })}
